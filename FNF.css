@@ -189,3 +189,15 @@ iframe{
   .fnf-box{min-width:100px;padding:12px 18px;font-size:16px}
   .timeline-tooltip{width:220px}
 }
+
+@media (max-width: 420px) {
+  .power-rankings {
+    column-count: 2;
+  }
+}
+
+@media (max-width: 310px) {
+  .power-rankings {
+    column-count: 1;
+  }
+}
