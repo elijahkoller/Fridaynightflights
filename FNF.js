@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
     2: { name: "The Mariner", text: "The first fullfledge event where the mariner won in domminant fashion for the first time, realizing everyones fears." },
     3: { name: "The Mariner", text: "The first and only back to back FNF championship, in which the Mariner didn't lose a single leg, defeating silksong for the second time in the finals." },
     4: { name: "John Pork", text: "The second win for John Pork in the mordernized format tournament format, John Pork was brutally injured by JJ Fiend, who was then abducted by the Night Mariner." },
-    5: { name: "Silksong", text: "In the absence of both JJ Fiend and John Pork, Silkdong makes his first appearance in the finals from the winners bracket and finally gets over the hump by defeating G***e to win his first FNF" },
+    5: { name: "Silksong", text: "In the absence of both JJ Fiend and John Pork, Silksong makes his first appearance in the finals from the winners bracket and finally gets over the hump by defeating G***e to win his first FNF" },
     6: { name: "John Pork", text: "John Pork makes a suprise return and becomes the first finalist from the losers' bracket to win FNF, defeating JJ fiend in his first Finals appearance." },
     7: { name: "Silksong & Jersey", text: "In the largest tournament in FNF history, Silksong and Jersey battle their way to the finals defeating John Pork and Dickmel to earn Silksong his second FNF Trophy" },
     8: { name: "John Pork", text: "In the largest singles tournamnet in FNF History John Pork crushes the competition winning his fourth championship." },
@@ -138,3 +138,4 @@ document.addEventListener("DOMContentLoaded", () => {
   window.addEventListener("resize", hideTooltip);
   window.addEventListener("scroll", hideTooltip);
 });
+
