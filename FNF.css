@@ -1,0 +1,191 @@
+/* ---------- Base ---------- */
+:root{
+  --bg: #D2B48C;
+  --card: #cfcbc5;
+  --accent-red: #e33;
+  --accent-green: #007000;
+  --muted: #cfcfcf;
+  --fnf-red: #c81313;
+  --fnf-red-hover: #ff2b2b;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--muted);
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+
+/* ---------- Header ---------- */
+.top-header{
+  border-bottom:8px solid #b30000;
+  background:linear-gradient(180deg,#cfcbc5,#cfcbc5);
+  padding:18px 12px;
+  box-shadow:0 6px 20px rgba(0,0,0,0.6);
+}
+
+.header-inner{
+  display:flex;
+  align-items:center;
+  gap:18px;
+  max-width:1100px;
+  margin:0 auto;
+}
+
+.logo-container{
+  width:88px;
+  height:88px;
+  flex:0 0 88px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:transparent;
+  border-radius:12px;
+}
+
+.logo{
+  max-height:88px;
+  max-width:88px;
+  object-fit:contain;
+}
+
+.title-container h1{
+  margin:0;
+  color:var(--accent-red);
+  font-size:28px;
+  letter-spacing:0.6px;
+  font-weight:800;
+}
+
+.subtitle{
+  margin:2px 0 0 0;
+  font-size:13px;
+  color:#000000;
+  font-weight:500;
+}
+
+/* ---------- Layout / Cards ---------- */
+main{max-width:1100px;margin:32px auto;padding:0 16px}
+.card{
+  background:var(--card);
+  border-radius:12px;
+  padding:20px;
+  margin-bottom:28px;
+  border:3px solid var(--accent-green);
+  box-shadow:0 6px 30px rgba(0,0,0,0.65);
+}
+
+.rankings h3, .stream-section h3, .timeline-section h3{
+  margin:0 0 14px 0;
+  color: #00b33a;
+  font-size:20px;
+}
+
+.power-rankings {
+  columns: 3; /* number of columns */
+  column-gap: 40px; /* space between columns */
+}
+/* Rankings list */
+.rankings ol{
+  margin:0;
+  padding-left:18px;
+  font-size:1.1rem;
+  color:#000000;
+}
+.rankings li{margin:8px 0}
+
+/* Stream iframe */
+.iframe-wrap{
+  width:100%;
+  border-radius:10px;
+  overflow:hidden;
+  border:4px solid var(--accent-green);
+}
+iframe{
+  width:100%;
+  height:420px;
+  border:0;
+  display:block;
+}
+
+/* ---------- Timeline Styles ---------- */
+.timeline-section h3{margin-bottom:10px}
+
+/* wrapper allows horizontal scroll */
+.timeline-wrapper{
+  width:100%;
+  overflow-x:auto;
+  overflow-y:hidden;
+  white-space:nowrap;
+  padding:12px 6px;
+  -webkit-overflow-scrolling:touch;
+}
+
+/* inner container uses inline-flex so items stay on one line */
+.timeline{
+  display:inline-flex;
+  gap:18px;
+  align-items:center;
+  padding:8px;
+}
+
+/* boxes/dots */
+.fnf-box{
+  background:var(--fnf-red);
+  color:#fff;
+  border:4px solid var(--accent-green);
+  border-radius:16px;
+  padding:16px 28px;
+  font-size:18px;
+  font-weight:800;
+  min-width:120px;
+  text-align:center;
+  cursor:pointer;
+  user-select:none;
+  transition:transform .16s ease, background .12s ease;
+  box-shadow:0 6px 18px rgba(0,0,0,0.6);
+}
+.fnf-box:hover{ transform:translateY(-6px) scale(1.05); background:var(--fnf-red-hover); }
+
+/* tooltip */
+.timeline-tooltip{
+  position:absolute;
+  background:#121212;
+  border:3px solid var(--accent-green);
+  padding:14px;
+  color:var(--muted);
+  width:260px;
+  border-radius:10px;
+  box-shadow:0 12px 30px rgba(0,0,0,0.8);
+  z-index:9999;
+  font-size:14px;
+  pointer-events:none; /* avoid interfering with hover events */
+}
+.timeline-tooltip.hidden{ display:none }
+
+/* small caret */
+.timeline-tooltip::after{
+  content:"";
+  position:absolute;
+  width:12px;height:12px;
+  background:inherit;
+  border-left:3px solid var(--accent-green);
+  border-bottom:3px solid var(--accent-green);
+  transform: rotate(45deg);
+  left:calc(50% - 6px);
+  bottom:-7px;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width:700px){
+  .header-inner{flex-direction:column; gap:8px; padding-bottom:6px}
+  .logo{max-height:72px}
+  .title-container h1{font-size:22px}
+  iframe{height:260px}
+  .fnf-box{min-width:100px;padding:12px 18px;font-size:16px}
+  .timeline-tooltip{width:220px}
+}

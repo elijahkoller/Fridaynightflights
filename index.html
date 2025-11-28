@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>FNF - Friday Night Flights</title>
+  <link rel="stylesheet" href="FNF.css" />
+  <!-- load script deferred so DOM exists -->
+  <script src="FNF.js" defer></script>
+</head>
+<body>
+
+  <header class="top-header">
+    <div class="header-inner">
+      <div class="logo-container">
+        
+        <img src="https://previews.dropbox.com/p/thumb/AC0wbPKpC3XI41K6V_HJV-b9o9P0qhQttjhTbEg2yrwYR0ov8jy91ZMUNZyUUcqHzeJXW12ygKHzXx2HuSEdJ6DKB3rORUF-QvfWmvIiJ8OmJNpzqImsjw0hHy6QbVMAFgDomEw-IfYBFhUEmJ7yU4vwCuHSaUHda-FtrUmMJ3w34vqsKmMnZweZRBbZU6nLdYnJ_oseQIj5aH066H19W802Gi_RNZBZ7N1SR4Moi8IDWIgTk1t1Izo8_PyQ0H1KmbXwUptqkWDtm0skQHnR4zU8ANCf3T35eWycfkxtpHfCRtup-ESMGyb5dZfY_BecQzP4EBrUcu8otzBgB69pwle_/p.png" alt="FNF Logo" class="logo" />
+      </div>
+
+      <div class="title-container">
+        <h1>Friday Night Flights</h1>
+        <h2 class="subtitle">FNF Darts League</h2>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="rankings card">
+      <h3>Weekly Power Rankings</h3>
+      <ol class="power-rankings">
+        <li>John Pork</li>
+        <li>The Mariner</li>
+        <li>Silksong</li>
+        <li>Cheesesteak</li>
+        <li>Hammer</li>
+        <li>Jane Berger</li>
+        <li>Bi(g Mi)tch</li>
+        <li>FBGS</li>
+        <li>Ohio</li>
+        <li>Diabeto</li>
+        <li>JJ Fiend</li>
+        <li>Wayne</li>
+        <li>Haole</li>
+      </ol>
+    </section>
+
+    <section class="stream-section card">
+      <h3>Live Stream</h3>
+      <!-- Replace with your actual embed URL -->
+      <div class="iframe-wrap">
+        <iframe src="https://www.youtube.com/embed/imvQsQK4ZAM" allowfullscreen></iframe>
+      </div>
+    </section>
+
+    <!-- Timeline -->
+    <section class="timeline-section card">
+      <h3>FNF Championship Timeline</h3>
+
+      <!-- horizontal scroll container -->
+      <div class="timeline-wrapper" aria-label="FNF timeline" tabindex="0">
+        <div class="timeline" id="timeline">
+
+          <!-- Timeline items - consistent classes/data-id used by script -->
+          <div class="fnf-box timeline-dot" data-id="1">FNF 1</div>
+          <div class="fnf-box timeline-dot" data-id="2">FNF 2</div>
+          <div class="fnf-box timeline-dot" data-id="3">FNF 3</div>
+          <div class="fnf-box timeline-dot" data-id="4">FNF 4</div>
+          <div class="fnf-box timeline-dot" data-id="5">FNF 5</div>
+          <div class="fnf-box timeline-dot" data-id="6">FNF 6</div>
+          <div class="fnf-box timeline-dot" data-id="7">FNF 7</div>
+          <div class="fnf-box timeline-dot" data-id="8">FNF 8</div>
+          <div class="fnf-box timeline-dot" data-id="9">FNF 9</div>
+          <div class="fnf-box timeline-dot" data-id="10">FNF 10</div>
+        </div>
+      </div>
+
+      <!-- Tooltip that JS will position & populate -->
+      <div id="timeline-tooltip" class="timeline-tooltip hidden" role="dialog" aria-hidden="true"></div>
+
+    </section>
+  </main>
+
+</body>
+</html>
