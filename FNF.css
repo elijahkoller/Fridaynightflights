@@ -247,3 +247,9 @@ iframe{
     column-count: 1;
   }
 }
+
+@media (max-width: 701px){
+  body {
+    padding-top: 190px;
+  }
+}
