@@ -61,6 +61,20 @@ body{
   object-fit:contain;
 }
 
+.header-links {
+  word-spacing: 25px;
+}
+
+.header-links a{
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.header-links a:hover {
+  text-decoration: underline;
+}
+
 .flyer {
   max-width:500px;
   width:100%;
@@ -253,3 +267,4 @@ iframe{
     padding-top: 190px;
   }
 }
+
