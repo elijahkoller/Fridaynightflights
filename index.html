@@ -1,12 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>FNF - Friday Night Flights</title>
-  <link rel="stylesheet" href="FNF.css" />
+  <link rel="stylesheet" href="FNF.css">
   <!-- load script deferred so DOM exists -->
-  <script src="FNF.js" defer></script>
+  <script src="FNF.js" defer=""></script>
 </head>
 <body>
 
@@ -14,7 +12,7 @@
     <div class="header-inner">
       <div class="logo-container">
         
-        <img src="https://i.imgur.com/JrLkQVo.png" alt="FNF Logo" class="logo" />
+        <img src="https://i.imgur.com/JrLkQVo.png" alt="FNF Logo" class="logo">
       </div>
 
       <div class="title-container">
@@ -25,7 +23,12 @@
   </header>
 
   <main>
-    <section class="rankings card">
+    <section class="flyer-section card">
+      <h3>Upcoming</h3>
+<img src="https://i.imgur.com/ht0UsCM.jpeg" alt="FNF 10 flyer" class="flyer">
+      
+      
+    </section><section class="rankings card">
       <h3>Weekly Power Rankings</h3>
       <ol class="power-rankings">
         <li>John Pork</li>
@@ -48,7 +51,7 @@
       <h3>Live Stream</h3>
       <!-- Replace with your actual embed URL -->
       <div class="iframe-wrap">
-        <iframe src="https://www.youtube.com/embed/imvQsQK4ZAM" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/imvQsQK4ZAM" allowfullscreen=""></iframe>
       </div>
     </section>
 
@@ -61,25 +64,37 @@
         <div class="timeline" id="timeline">
 
           <!-- Timeline items - consistent classes/data-id used by script -->
-          <div class="fnf-box timeline-dot" data-id="1">FNF 1</div>
-          <div class="fnf-box timeline-dot" data-id="2">FNF 2</div>
-          <div class="fnf-box timeline-dot" data-id="3">FNF 3</div>
-          <div class="fnf-box timeline-dot" data-id="4">FNF 4</div>
-          <div class="fnf-box timeline-dot" data-id="5">FNF 5</div>
-          <div class="fnf-box timeline-dot" data-id="6">FNF 6</div>
-          <div class="fnf-box timeline-dot" data-id="7">FNF 7</div>
-          <div class="fnf-box timeline-dot" data-id="8">FNF 8</div>
-          <div class="fnf-box timeline-dot" data-id="9">FNF 9</div>
-          <div class="fnf-box timeline-dot" data-id="10">FNF 10</div>
+          <div class="fnf-box timeline-dot" data-id="1" tabindex="0">FNF 1</div>
+          <div class="fnf-box timeline-dot" data-id="2" tabindex="0">FNF 2</div>
+          <div class="fnf-box timeline-dot" data-id="3" tabindex="0">FNF 3</div>
+          <div class="fnf-box timeline-dot" data-id="4" tabindex="0">FNF 4</div>
+          <div class="fnf-box timeline-dot" data-id="5" tabindex="0">FNF 5</div>
+          <div class="fnf-box timeline-dot" data-id="6" tabindex="0">FNF 6</div>
+          <div class="fnf-box timeline-dot" data-id="7" tabindex="0">FNF 7</div>
+          <div class="fnf-box timeline-dot" data-id="8" tabindex="0">FNF 8</div>
+          <div class="fnf-box timeline-dot" data-id="9" tabindex="0">FNF 9</div>
+          <div class="fnf-box timeline-dot" data-id="10" tabindex="0">FNF 10</div>
         </div>
       </div>
 
       <!-- Tooltip that JS will position & populate -->
-      <div id="timeline-tooltip" class="timeline-tooltip hidden" role="dialog" aria-hidden="true"></div>
+      <div id="timeline-tooltip" class="timeline-tooltip hidden" role="dialog" aria-hidden="true" style="left: -9999px; top: -9999px;"><strong>FNF 5</strong><br>
+                    <span style="color:#00c000;">Champion:</span> Silksong<br><br>
+                    <em>In the absence of both JJ Fiend and John Pork, Silksong makes his first appearance in the finals from the winners bracket and finally gets over the hump by defeating G***e to win his first FNF</em></div>
 
     </section>
+    
   </main>
 
-</body>
-</html>
 
+
+
+<footer class="site-footer">
+    <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="contact.html">Contact</a>
+    </div>
+    <p>© 2025 FNF Staff — All Rights Reserved</p>
+  </footer>
+  </body>
+</html>
