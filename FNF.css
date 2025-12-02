@@ -307,7 +307,19 @@ iframe{
 
 /* ---------- stats ---------- */
 .stats-table {
-  max-height:210px;
+  width: 100%;
+  height: 316;       /* visible height of your stat table */
+  overflow-x: auto;    /* keep horizontal scroll */
+  overflow-y: hidden;  /* kill vertical scroll and ghost row */
+  position: relative;
+}
+
+.stats-table iframe {
+  width: 100%;
+  height: 316px;       /* taller to bury the bottom bar */
+  border: none;
+  display: block;
+  transform: translateY(-24px);
 }
 
 /* ---------- Responsive ---------- */
