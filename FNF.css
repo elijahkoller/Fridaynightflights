@@ -325,10 +325,15 @@ iframe{
   .competitor-roster {
     display: inline;
   }
+  .contact-info {
+    display: inline
+  }
 }
 
 @media (max-width: 310px) {
   .power-rankings {
     column-count: 1;
   }
+  
 }
+
