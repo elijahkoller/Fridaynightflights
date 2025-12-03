@@ -115,7 +115,7 @@ main{
   box-shadow:0 6px 30px rgba(0,0,0,0.65);
 }
 
-.rankings h3, .stream-section h3, .timeline-section h3, .flyer-section h3, .roster-section h3, .contact-section h3{
+.rankings h3, .stream-section h3, .timeline-section h3, .flyer-section h3, .roster-section h3, .contact-section h3, .profile-info h3{
   margin:0 0 14px 0;
   color: #00b33a;
   font-size:20px;
@@ -378,6 +378,7 @@ iframe{
   }
   
 }
+
 
 
 
