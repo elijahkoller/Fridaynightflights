@@ -121,9 +121,20 @@ main{
   font-size:20px;
 }
 
+/* ---------- Power Rankings ---------- */
 .power-rankings {
-  columns: 3; /* number of columns */
-  column-gap: 40px; /* space between columns */
+  columns: 3;
+  column-gap: 40px;
+}
+
+.power-rankings a{
+  margin:0;
+  font-size:1.1rem;
+  color:#000000;
+  text-decoration:none;
+}
+.power-rankings a:hover{
+  text-decoration:underline;
 }
 /* Rankings list */
 .rankings ol{
@@ -360,7 +371,7 @@ iframe{
   }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 450px) {
   .power-rankings {
     column-count: 2;
   }
@@ -378,8 +389,3 @@ iframe{
   }
   
 }
-
-
-
-
-
