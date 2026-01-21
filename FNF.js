@@ -14,7 +14,8 @@ document.addEventListener("DOMContentLoaded", () => {
     7: { name: "Silksong & Jersey", text: "In the largest tournament in FNF history, Silksong and Jersey battle their way to the finals defeating John Pork and Dickmel to earn Silksong his second FNF Trophy" },
     8: { name: "John Pork", text: "In the largest singles tournamnet in FNF History John Pork crushes the competition winning his fourth championship." },
     9: { name: "The Mariner", text: "The Mariner wins his third Championship in domminant fashion, seeming to be in form for the first time in months." },
-    10: { name: "TBD", text: "Find out next week on Friday Night Flights!" }
+    10: { name: "John Pork", text: "Once again John Pork Rises to the top to claim glory once again, winning his 5th FNF and claiming the Season 1 championship" },
+    11: { name: "TBD", text: "Find out this friday, when FNF Returns for season 2!" }
   };
 
   const timelineWrapper = document.querySelector(".timeline-wrapper");
@@ -138,4 +139,5 @@ document.addEventListener("DOMContentLoaded", () => {
   window.addEventListener("resize", hideTooltip);
   window.addEventListener("scroll", hideTooltip);
 });
+
 
