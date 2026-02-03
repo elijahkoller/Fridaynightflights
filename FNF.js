@@ -15,7 +15,9 @@ document.addEventListener("DOMContentLoaded", () => {
     8: { name: "John Pork", text: "In the largest singles tournamnet in FNF History John Pork crushes the competition winning his fourth championship." },
     9: { name: "The Mariner", text: "The Mariner wins his third Championship in domminant fashion, seeming to be in form for the first time in months." },
     10: { name: "John Pork", text: "Once again John Pork Rises to the top to claim glory once again, winning his 5th FNF and claiming the Season 1 championship" },
-    11: { name: "TBD", text: "Find out this friday, when FNF Returns for season 2!" }
+    11: { name: "The Mariner", text: "The Mariner wins his 4th title, in a close decisive final against John Pork!" },
+    11: { name: "The Mariner", text: "The MAriner goes back to back beating John Pork once again, for just the second time in FNF history. He ties John Pork for the most FNF titles for the first time since FNF 6!" },
+    11: { name: "TBD", text: "Find out this friday if the Mariner will three-peat, will John Pork get revenge, or will a newcomer finallly rise to the challenge, only at FNF 13" }
   };
 
   const timelineWrapper = document.querySelector(".timeline-wrapper");
@@ -139,5 +141,6 @@ document.addEventListener("DOMContentLoaded", () => {
   window.addEventListener("resize", hideTooltip);
   window.addEventListener("scroll", hideTooltip);
 });
+
 
 
